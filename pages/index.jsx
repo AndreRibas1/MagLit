@@ -244,7 +244,8 @@ export default function Home() {
             setLinkSettingsOpen={setLinkSettingsOpen}
           />
         )}
-
+      </AnimatePresence>
+      
       {/* MAIN CONTENT */}
       <div className="flex h-screen flex-col items-center justify-center">
         <div className="flex w-full flex-col gap-y-10 ">
@@ -265,7 +266,6 @@ export default function Home() {
           copyToClipboard={copyToClipboard}
         />
       </div>
-      <SpeedInsights />
 
       {/* LIT LINKS BUTTON */}
       {/* DESKTOP */}
