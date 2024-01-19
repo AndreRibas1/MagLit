@@ -7,6 +7,7 @@ import "../styles/globals.css";
 import Head from "next/head";
 import { BASE_URL } from "../utils/config";
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const CounterAnalytics = dynamic(
   () => import("../components/CounterAnalytics"),
@@ -50,6 +51,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Analytics />
+      <SpeedInsights />
       <CounterAnalytics />
       <RecoilRoot>
         <ThemeProvider attribute="class" defaultTheme="dark">
