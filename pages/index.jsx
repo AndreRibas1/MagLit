@@ -21,7 +21,6 @@ import { useTheme } from "next-themes";
 import Form from "../components/home/Form";
 import { useEffect } from "react";
 import { useState } from "react";
-import { SpeedInsights } from '@vercel/speed-insights/react';
 
 export default function Home() {
   // !GLOBAL
@@ -245,7 +244,6 @@ export default function Home() {
             setLinkSettingsOpen={setLinkSettingsOpen}
           />
         )}
-      </AnimatePresence>
 
       {/* MAIN CONTENT */}
       <div className="flex h-screen flex-col items-center justify-center">
