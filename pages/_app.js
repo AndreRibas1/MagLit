@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import "../styles/globals.css";
 import Head from "next/head";
 import { BASE_URL } from "../utils/config";
+import { Analytics } from '@vercel/analytics/react';
 
 const CounterAnalytics = dynamic(
   () => import("../components/CounterAnalytics"),
@@ -48,6 +49,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="theme-color" content="#fcd34d" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Analytics />
       <CounterAnalytics />
       <RecoilRoot>
         <ThemeProvider attribute="class" defaultTheme="dark">
