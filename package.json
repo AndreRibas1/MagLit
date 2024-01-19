@@ -9,6 +9,7 @@
     "docker": "sudo docker-compose build && sudo docker-compose up -d"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.1.2",
     "crypto-js": "^4.1.1",
     "firebase": "^9.6.2",
     "framer-motion": "^6.3.3",
