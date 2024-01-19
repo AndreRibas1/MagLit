@@ -21,6 +21,7 @@ import { useTheme } from "next-themes";
 import Form from "../components/home/Form";
 import { useEffect } from "react";
 import { useState } from "react";
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 export default function Home() {
   // !GLOBAL
@@ -266,6 +267,7 @@ export default function Home() {
           copyToClipboard={copyToClipboard}
         />
       </div>
+      <SpeedInsights />
 
       {/* LIT LINKS BUTTON */}
       {/* DESKTOP */}
